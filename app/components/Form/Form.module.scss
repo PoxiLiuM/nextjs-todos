@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &.hasError {
+    input {
+      border-color: var(--red);
+    }
+  }
+
+  > .error {
+    text-align: center;
+    color: var(--red);
+  }
+}

@@ -1,0 +1,15 @@
+.li {
+  list-style: decimal;
+  line-height: 36px;
+  cursor: pointer;
+  transition: 250ms color;
+  margin-left: 20px;
+  &.checked {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  &:hover {
+    color: var(--blue);
+  }
+}
